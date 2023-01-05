@@ -2,15 +2,26 @@
 
 using namespace std;
 
-int n;
-vector<pair(int,int)> plan;
+int n, cnt=1;
+vector<pair<int,int>> plan;
 
 int main(){
     cin >> n;
     for(int i=0; i<n; i++){
         int start, end;
-        cin >> plan.push_back({start, end});
+        cin >> start >> end;
+        plan.push_back({end, start});
     }
-    // 줄 세우고, 앞에서 부터 간격 비교하면서 정해지면 end시간 다음으로 부터 또 비교~~
+    sort(plan.begin(), plan.end());
+    
+    int tmp = plan[0].first;
+
+    for(int i=1; i<plan.size(); i++){
+        if(plan[i].second>=tmp){
+            cnt++;
+            tmp = plan[i].first;
+        }
+    }
+    cout << cnt << endl;
     return 0;
 }
