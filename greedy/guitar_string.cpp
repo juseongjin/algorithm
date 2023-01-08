@@ -13,7 +13,6 @@ int main(){
         tmp1 = min(tmp1, x);
         tmp2 = min(tmp2, y);
     }
-    cout << tmp1 << "           " << tmp2 << endl;
     if(tmp1>tmp2*6)result+=tmp2*n;
     else{
         result = min((n/6)*tmp1+tmp2*(n%6), ((n/6)+1)*tmp1);
