@@ -22,8 +22,6 @@ int main(){
     }
     if(result || n==1) cout << "권병장님, 중대장님이 찾으십니다" << endl;
     else cout << "엄마 나 전역 늦어질 것 같아" << endl;
-    
-    
 
     return 0;
 }
