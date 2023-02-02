@@ -11,6 +11,7 @@
         "sstream": "cpp",
         "cmath": "cpp",
         "ostream": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "iostream": "cpp"
     }
 }
